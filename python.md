@@ -10,7 +10,6 @@
 * To clear the console, use the `clear` command.
 * To set a variable, `name_of_variable = "What we are referring to"`
 * To use the user's input as a variable, `first_name = input"What is your name?`.
-  
 
 ## Math Operations
 
@@ -62,7 +61,7 @@
 
 * `print("Bye {}!".format("Nihad"))` *=Bye Nihad!*
 * `example = "Hi {}!"`
-  `example.format("Nihad")` *= Hi Nihad!*
+  * `example.format("Nihad")` *= Hi Nihad!*
 
 
 
@@ -155,30 +154,30 @@
 ## Lists
 
 * `listname = ["item1", "item2", "item3", "item4"]`
-  `listname [0]` *= item1*
-  `listname [1]` *=item2*
-  `listname [-1]` *= item4*
+  * `listname [0]` *= item1*
+  * `listname [1]` *=item2*
+  * `listname [-1]` *= item4*
 * `listname [2] = ("new item")`
 * `listname [3] += ("addition")`
 * `list = [1, 2, 3]`
-  `list.extend([4, 5, 6])` *list = [1, 2, 3, **4, 5, 6**]*
+  * `list.extend([4, 5, 6])` *list = [1, 2, 3, **4, 5, 6**]*
 * `list = [1, 2, 3]`
-  `list.append([4, 5, 6])` *list = [1, 2, 3, **[4, 5, 6]**]*
+  * `list.append([4, 5, 6])` *list = [1, 2, 3, **[4, 5, 6]**]*
 * `list.insert(0, "item1")`
 * `names = ["Jack, "Max", "Tom"]`
-  `del names [0]` *names = ["Max", "Tom"]*
-  `names.remove("Max")` *names = ["Jack", "Tom"]*
-  `names.pop(0)` *names = ["Max", "Tom"]* **+** *Python returns the value*
+  * `del names [0]` *names = ["Max", "Tom"]*
+  * `names.remove("Max")` *names = ["Jack", "Tom"]*
+  * `names.pop(0)` *names = ["Max", "Tom"]* **+** *Python returns the value*
 * `grades = [5.3, 4.7, 3.8]`
   `gradesbackup = grades.copy()`
 * `quote = "To be or"`
-  `words = quote.split(" ")` *words = ["To", "be", "or"]
+  * `words = quote.split(" ")` *words = ["To", "be", "or"]
 * `students = ["Lucy", "Anna", "Katy"]`
-  `names = ", ".join(students)` *= 'Lucy, Anna, Katy'*
+  * `names = ", ".join(students)` *= 'Lucy, Anna, Katy'*
 * `prices = [5.7, 8.9, 7.4]`
-  `sum(prices)` *= 22.0*
-  `min(prices)` *= 5.7*
-  `max(prices)` *= 8.9*
+  * `sum(prices)` *= 22.0*
+  * `min(prices)` *= 5.7*
+  * `max(prices)` *= 8.9*
 
 
 
@@ -212,11 +211,12 @@
 ## Sequences
 
 * `alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']`
-  `alpahbet[0]` *= "A"*
-  `alpahbet[1:4]` *= ['B', 'C', 'D']*
-  `alphabet[3:]` *= ['D', 'E', 'F', 'G', 'H']*
-  `alphabet[::2]` *= ['A', 'C', 'E', 'G']*
-  `alphabet[::-1]` *= ['H', 'G', 'F', 'E', 'D', 'C', 'B', 'A']*
+
+  * `alpahbet[0]` *= "A"*
+  * `alpahbet[1:4]` *= ['B', 'C', 'D']*
+  * `alphabet[3:]` *= ['D', 'E', 'F', 'G', 'H']*
+  * `alphabet[::2]` *= ['A', 'C', 'E', 'G']*
+  * `alphabet[::-1]` *= ['H', 'G', 'F', 'E', 'D', 'C', 'B', 'A']*
 
 * ```python
   x = range(3, 20, 2)
@@ -271,5 +271,3 @@
   if __name__ == '__main__':
       print("This is the main file.")
   ```
-
-  
