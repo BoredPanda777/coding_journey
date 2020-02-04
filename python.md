@@ -1,15 +1,19 @@
 # Python Notes
 
+##Pre Basics
+* How Python can be run in a command prompt
+* Difference between Batch & Interpreted mode?
+
 ## Basics
 
 * Python is case sensitive.
 * To print a message: `print("Hello, World")`
 * To run a script, `type python filenamehere.py`
 * To start the REPL, simply type *python* into the terminal.
-* To see how does a function work, type `help(print)`.
+* To see how a function works, type `help(print)`.
 * To clear the console, use the `clear` command.
 * To set a variable, `name_of_variable = "What we are referring to"`
-* To use the user's input as a variable, `first_name = input"What is your name?`.
+* To use the user's input as a variable, `first_name = input "What is your name?"`.
 
 ## Math Operations
 
@@ -40,8 +44,11 @@
 
 * `'This is a string'`
 * `"This is also a string"`
-* `"""They said, "Yes! This is a string"."""`
+* `"This is an invalid string'`
+* `"""They said, "Yes! This is a comment"."""`
+* `# and this is another comment type`
 * `\n` to skip one line in strings.
+* `\r` just another way to skip one line in strings.
 * `"chocolate" + " and marshmallows"` = *"chocolate and marshmallows"*
 * `dessert = "chocolate" + "and marshmallows"` *= chocolate and marshmallows*
 * `dessert += ", yum"` *= chocolate and marshmallows, yum*
@@ -50,7 +57,7 @@
 * `"HI".lower()` *= hi*
 * `"Hi, how are you?".title()` *=Hi, How Are You?*
 * `quote.count(string)` Counts the number of time a string was mentioned in a quote. Note it is case sensitive and only returns the first time the string has appeared.
-* `str(42)` Converts it to a string.
+* `str(42)` Converts it to a string. """<<<<<<< What do you mean here?"""
 * `quote.rstrip()`
 * `quote.lstrip()`
 * `quote.strip()`
@@ -89,27 +96,27 @@
   ```
 
 * ```python
-  name = input("What is your name?")
+  name = input("What is your name?  ")
   
   if name == "Justin":
       print(name, "is learning Python")
   elif name == "Max":
       print("I miss you", name)
   else:
-      print("You are not learning anything!")
+      print("You are not learning anything,", name, "!")
   ```
 
 * ```python
   import sys
   
   username = "max123"
-  prompt = input("Please enter your username...")
+  prompt = input("Please enter your username... ")
   
   attempt = 1
   while prompt != username:
       if attempt > 3:
-          sys.exit("Too many invalid tries")
-      prompt = input("You entered an invalid username. Please try again...")
+          sys.exit("Too many invalid entries")
+      prompt = input("You entered an invalid username. Please try again... ")
       attempt += 1
       
   print("Weclome!")
@@ -122,10 +129,10 @@
 * ```python
   def rect_surafce(a, b):
       result = a * b
-      print(result)
+      print("The surface is", result)
   
-  side_a = int(input("What is the lenght of side A?"))
-  side_b = int(input("What is the lenght of sibe B?"))
+  side_a = int(input("What is the lenght of side A?  "))
+  side_b = int(input("What is the lenght of side B?  "))
   
   rect_surafce(side_a, side_b)
   ```
@@ -141,8 +148,8 @@
       print(result)
       
   try:
-  	side_a = int(input("What is the lenght of side A?"))
-  	side_b = int(input("What is the lenght of sibe B?"))
+  	side_a = int(input("What is the lenght of side A?  "))
+  	side_b = int(input("What is the lenght of sibe B?  "))
   except ValueError:
       print("Please enter a valid number...")
   else:
@@ -205,7 +212,7 @@
   ```
 
 * `first, last = input("Enter your full name:").split(" ")`
-
+""" ^^^What's supposed to happen there? nothing is returning :D """
 
 
 ## Sequences
